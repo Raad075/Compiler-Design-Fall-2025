@@ -4,7 +4,7 @@ using namespace std;
 
 
 bool dfaAcc (string dfa) {
-    char state = 'A';   // Start state
+    char state = 'A';  
 
     for (int i = 0; i < dfa.length(); i++) {
         char ch = dfa[i];
@@ -24,11 +24,12 @@ int main() {
     cout << "Enter string : ";
     cin >> dfa;
 
-    if (dfaAccept(dfa))
+    if (dfaAcc(dfa))
         cout << "String is accepted" << endl;
     else
         cout << "String is rejected" << endl;
 
     return 0;
 }
+
 
